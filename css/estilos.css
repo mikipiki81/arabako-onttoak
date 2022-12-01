@@ -1,0 +1,264 @@
+body{
+    background-color: rgb(255, 247, 212);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+
+}
+/* Para que todas estas etiquetas tengan las mismas características de base*/
+header, nav, main, section, footer, form, aside{
+    background-color: rgb(181, 240, 181);
+    width: 95%;
+    border: 3px solid rgb(177, 136, 23);
+    border-radius: 5px;
+    margin: 2%;
+    display: flex;
+}
+/* para que el texto del header cambie de color al pasar con el raton */
+header a:hover{
+    color: rgba(255, 255, 255, 0.959);
+}
+/* configuracion de el nav que se repite en todas las paginas */
+nav a{
+    border: 3px solid rgb(177, 136, 23);
+    border-radius: 10px;
+    margin: 1%;
+    padding: 1%;
+    text-decoration: none;
+    background-color: rgba(187, 144, 53, 0.692);
+    font-size: 1,25rem;
+    color: black;
+
+}
+
+nav a:hover {
+    color: #000000ea;
+    background-color:transparent;
+}
+/* configuracion de las etiquetas fenericas */
+main{
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+main p{
+    width: 50%;
+}
+
+h3{
+    width: 100%;
+    text-align: center;
+}
+
+form{
+    margin: 1%;
+    align-items:center;
+}
+
+fieldset{
+    width: 100%;
+    margin: 2%;
+    text-align:left;
+}
+
+aside{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+section img{
+    object-fit:cover;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section img:hover{
+    filter: brightness(1.5);
+}
+/* clase para el titulo principal */
+.titulo{
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    text-align: center; 
+    flex-direction: row;
+    justify-items: center;
+    
+}
+/* clase para la barra de navegacion */
+.barranavegacion{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+/* clases para la pagina categorias */
+.section_categorias{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    flex-direction: row;
+    text-align: center;
+}
+
+.articulo_categorias{
+    margin: 1%;
+    border: solid brown;
+    border-radius: 5px; 
+    
+}
+/* clases para la pagina noticias */
+.titulo_noticias{
+    width: 95%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.section_noticias{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    flex-direction: row;
+    text-align: center;
+}
+
+.articulo_noticias{
+    margin: 10px;
+    border: solid brown 1px;
+    border-radius: 5px;
+    flex-direction: column;
+    flex-basis: 30%;
+    text-align:left;
+    padding: 10px;
+    
+}
+
+.seguir_leyendo{
+    text-decoration: none;
+    background-color:transparent;
+    border: solid brown;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+    float: right;
+}
+
+.noticias_articulo_img{
+    float: left;
+    margin: 2%;
+    border-radius: 5px;
+    border: solid  #bba83e;
+}
+/* para la barra de navegacion de categorias */
+.barranavegacion_categorias{
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    flex-direction: row;
+    text-align: center;
+}
+
+.titulo_navegador_categorias{
+    width: 95%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1%;
+}
+/* clases para las paginas de las fichas micologicas */
+.main_fichas{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    flex-direction: row;
+    text-align: center;
+}
+
+.articulo_fichas{
+    width: 100%;
+}
+
+.section_fichas_cabecera{
+    flex-direction: column;
+    
+}
+
+.articulos_fichas_cabecera1{
+    display: flex;
+    flex-direction:row;
+    margin: 2%;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.articulos_fichas_cabecera{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}
+.etiqueta_fichas{
+    font-style: italic;
+    text-align: left;
+    width: 20%;
+}
+
+.texto_fichas{
+    font-size: 1.25rem;
+    margin: 5px;
+    text-align: left;
+    width: 50%;
+}
+
+.receta{
+    margin-left: 5px;
+}
+/* ordenar el aside de la pagina contactos */
+.texto_aside{
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+/* Eliminar fondo de las imagenes para que se vean modo png */
+.eliminar_fondo{
+    filter: brightness(1.1);
+    mix-blend-mode:multiply;
+
+}
+
+#img_categorias{
+    object-fit:cover;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#img_fichas{
+    object-fit:cover;
+    width: auto auto auto;
+    height: 200px;
+    margin: 1%;
+}
+
+#index_main_img{
+    float: left;
+    margin: 2%;
+    border-radius: 5px;
+    border: solid  #bba83e;
+}
+
+#index_main_p{
+    text-align:justify
+}
+
+#ancho{
+    width: 30%;
+    text-decoration: underline;
+}
+
+footer{
+    width: 93%;
+    padding: 1%;
+}
