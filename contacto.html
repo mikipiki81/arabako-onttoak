@@ -2,9 +2,9 @@
 <html lang="es">
 	<!--Módulo: DAW
 			UD: 02
-			Tarea evaluativa: 02 (50%)
+			Tarea evaluativa: 02 (80%)
 			Autor: Jose Maria Garcia Conde
-			Fecha: 01/12/2022 -->
+			Fecha: 02/12/2022 -->
 	
 	<head>
 		<!-- Cabecera -->
@@ -15,7 +15,6 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Quicksand&display=swap" rel="stylesheet">
 		<!-- Enlace a la hoja de estilos -->
 		<link rel="stylesheet" href="css/estilos.css">
 	</head>
@@ -23,10 +22,9 @@
     <body>
 		<!-- Cuerpo  -->
 		
-		<!-- Títulos  -->
+		<!-- Título Cabecera  -->
         <header>
 			<a href="index.html" class="titulo"><h1>ARABAKO ONTTOAK</h1></a>
-			<!--<h1>ARABAKO ONTTOAK</h1>-->
 		</header>
 
 		<!-- barra de navegacion -->
@@ -37,14 +35,15 @@
 		</nav>
 
 		<section>
-         
-			<form action="contacto.html">
+			<!-- Se configura el formulario para mandar la info por email -->
+			<form action="mailto:josegarcia@birt.eus;" method="POST">
 				<fieldset>
 					<legend><h3>Formulario de contacto</h3></legend>
 						<label for="fnamenom1">Nombre:</label><br>
-						<input type="text" name="nombre1" value="nombre"><br>
+						<!-- se incluye onFocus para restear el valor del campo al hacer click en las etiquetas input -->
+						<input type="text" name="nombre1" value="nombre" onFocus = 'this.value = "";'><br>
 						<label for="fnameapel1">Apellidos:</label><br>
-						<input type="text" name="apellido1" value="apellidos"><br>
+						<input type="text" name="apellido1" value="apellidos" onFocus = 'this.value = "";'><br>
 						
 	
 					
@@ -56,7 +55,7 @@
 					</select><br>
 					
 					<label for="ftext">Consulta:</label><br>
-					<textarea name="comentarios" rows="10" cols="40">escribe aqui tus comentarios</textarea><br>
+					<textarea name="comentarios" rows="10" cols="40" onFocus = 'this.value = "";'>escribe aqui tus comentarios</textarea><br>
 					
 					<input type="submit" value="Enviar">
 				</fieldset>
@@ -65,8 +64,8 @@
 			<aside>
 				<p class="texto_aside">Sigueme en mis redes sociales</p>
 				<a href="https://twitter.com/?lang=es" target="_blank"><img class="eliminar_fondo" src="iconosrs/twitter.png" alt="twitter"></a>
-				<a href="https://twitter.com/?lang=es" target="_blank"><img class="eliminar_fondo" src="iconosrs/facebook.jpg" alt="twitter"></a>
-				<a href="https://twitter.com/?lang=es" target="_blank"><img class="eliminar_fondo" src="iconosrs/instagram.png" alt="twitter"></a>
+				<a href="https://es-es.facebook.com/" target="_blank"><img class="eliminar_fondo" src="iconosrs/facebook.jpg" alt="twitter"></a>
+				<a href="https://www.instagram.com/" target="_blank"><img class="eliminar_fondo" src="iconosrs/instagram.png" alt="twitter"></a>
 
 			
 			</aside>
@@ -75,7 +74,7 @@
 		<!-- Pie de pagina -->
 		<footer>
 			Autoría y licencias: Pagina web realizada por José María García Conde. 
-			Todos los derechos de imagenes estan reservados
+			Todos los derechos de imagenes estan reservados y pertenecen a sus autores.<br> (uso educacional)
 		</footer>
 
     </body>

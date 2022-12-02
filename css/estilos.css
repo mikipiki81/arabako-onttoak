@@ -1,3 +1,4 @@
+/* Definicion general de toda la composicion en las fuentes se usan unidades rem */
 body{
     background-color: rgb(255, 247, 212);
     font-family: 'Quicksand', sans-serif;
@@ -27,14 +28,13 @@ nav a{
     background-color: rgba(187, 144, 53, 0.692);
     font-size: 1,25rem;
     color: black;
-
 }
 
 nav a:hover {
     color: #000000ea;
     background-color:transparent;
 }
-/* configuracion de las etiquetas fenericas */
+/* configuracion de las etiquetas genericas */
 main{
     justify-content: space-evenly;
     align-items: center;
@@ -50,7 +50,7 @@ h3{
     width: 100%;
     text-align: center;
 }
-
+/* pagina formulario */
 form{
     margin: 1%;
     align-items:center;
@@ -67,7 +67,7 @@ aside{
     flex-wrap: wrap;
     justify-content:space-evenly;
 }
-
+/* toadas las imagenes de las section tendran el mismo efecto en diferentes lugares */
 section img{
     object-fit:cover;
     width: 100px;
@@ -77,8 +77,15 @@ section img{
 }
 
 section img:hover{
-    filter: brightness(1.5);
+    filter: brightness(1.1);
 }
+/* configuracion para todos los footer */
+footer{
+    width: 93%;
+    padding: 1%;
+}
+
+/* CLASES */
 /* clase para el titulo principal */
 .titulo{
     color: black;
@@ -87,7 +94,6 @@ section img:hover{
     text-align: center; 
     flex-direction: row;
     justify-items: center;
-    
 }
 /* clase para la barra de navegacion */
 .barranavegacion{
@@ -107,8 +113,8 @@ section img:hover{
 .articulo_categorias{
     margin: 1%;
     border: solid brown;
-    border-radius: 5px; 
-    
+    border-radius: 5px;
+    align-items: center;
 }
 /* clases para la pagina noticias */
 .titulo_noticias{
@@ -224,9 +230,8 @@ section img:hover{
 .eliminar_fondo{
     filter: brightness(1.1);
     mix-blend-mode:multiply;
-
 }
-
+/* id-s usados para momentos puntuales poder modificar caracteristicas predeterminadas anteriormente */
 #img_categorias{
     object-fit:cover;
     width: 300px;
@@ -236,8 +241,6 @@ section img:hover{
 }
 
 #img_fichas{
-    object-fit:cover;
-    width: auto auto auto;
     height: 200px;
     margin: 1%;
 }
@@ -252,13 +255,8 @@ section img:hover{
 #index_main_p{
     text-align:justify
 }
-
+/* usado en el texto en las diferentes categorias */
 #ancho{
     width: 30%;
     text-decoration: underline;
-}
-
-footer{
-    width: 93%;
-    padding: 1%;
 }
